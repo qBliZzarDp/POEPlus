@@ -18,16 +18,11 @@ final class Connector {
     ///   - endNode: второе умение, служащее направлением соединения
     /// - Returns: дугу или прямую линию (в зависимости от местоположения умений) для соединения умений
     func createConnector(startNode: NodeClass, endNode: NodeClass) -> CAShapeLayer? {
-        let start = startNode
-        let end = endNode
-        if start.nodeModel.group == end.nodeModel.group && start.nodeModel.orbit == end.nodeModel.orbit {
-            if start.nodeAngle > end.nodeAngle {
-                return createArc(startNode: start, endNode: end, startAngle: start.nodeAngle, endAngle: end.nodeAngle)
-            } else {
-                return createArc(startNode: start, endNode: end, startAngle: start.nodeAngle, endAngle: end.nodeAngle)
-            }
+        if startNode.nodeModel.group == endNode.nodeModel.group && startNode.nodeModel.orbit == endNode.nodeModel.orbit {
+            return createArc(startNode: startNode, endNode: endNode,
+                             startAngle: startNode.nodeAngle, endAngle: endNode.nodeAngle)
         } else {
-            return createLine(startNode: start, endNode: end)
+            return createLine(startNode: startNode, endNode: endNode)
         }
     }
     
