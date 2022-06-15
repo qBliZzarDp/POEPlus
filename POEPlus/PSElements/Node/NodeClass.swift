@@ -47,7 +47,7 @@ class NodeClass: UIButton {
     /// Ссылка на древо
     let tree = TreeDataStorage.shared
     
-    init(nodes: SkillNodes, type: UIButton.ButtonType, group: Group) {
+    init(nodes: SkillNodes, type: UIButton.ButtonType = .custom, group: Group) {
         self.nodeModel = nodes
         self.nodeGroup = group
         super.init(frame: .zero)

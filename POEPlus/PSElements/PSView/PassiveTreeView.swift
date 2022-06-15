@@ -49,7 +49,7 @@ class PassiveTreeView: UIView, PSRendererProtocol {
             takeFirstLayer(from: &groupArray, at: self, subview: group, aboveGroup: false)
             for nodeNum in group.nodes {
                 guard let nodes = dataSource?.nodeDictionary(self)[nodeNum] else { return }
-                let node = NodeClass(nodes: nodes, type: .custom, group: group)
+                let node = NodeClass(nodes: nodes, group: group)
                 takeFirstLayer(from: &nodeArray, at: self, subview: node, aboveGroup: true)
             }
         }
