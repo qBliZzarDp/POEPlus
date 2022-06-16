@@ -77,6 +77,7 @@ class PassiveTreeScrollView: UIScrollView {
             frameToCenter.origin.y = 0
         }
         contentView.frame = frameToCenter
+        print("Tree centred")
     }
 }
 
