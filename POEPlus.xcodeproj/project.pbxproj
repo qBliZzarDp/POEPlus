@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -42,7 +42,6 @@
 		01928F30275522A7008B55F6 /* NodeUnallocated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01928F2F275522A7008B55F6 /* NodeUnallocated.swift */; };
 		01939B8C271B025B00B8E2EF /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01939B8B271B025B00B8E2EF /* String.swift */; };
 		01939B91271C025800B8E2EF /* TreeDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01939B90271C025800B8E2EF /* TreeDataStorage.swift */; };
-		01939B96271C1C7400B8E2EF /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 01939B95271C1C7400B8E2EF /* SnapKit */; };
 		01939BA527217EA800B8E2EF /* GroupImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01939BA427217EA800B8E2EF /* GroupImageView.swift */; };
 		01D8052227046F450056AC3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D8052127046F450056AC3B /* AppDelegate.swift */; };
 		01D8052427046F450056AC3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D8052327046F450056AC3B /* SceneDelegate.swift */; };
@@ -102,7 +101,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01939B96271C1C7400B8E2EF /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,7 +317,6 @@
 			);
 			name = POEPlus;
 			packageProductDependencies = (
-				01939B95271C1C7400B8E2EF /* SnapKit */,
 			);
 			productName = POEPlus;
 			productReference = 01D8051E27046F450056AC3B /* POEPlus.app */;
@@ -349,7 +346,6 @@
 			);
 			mainGroup = 01D8051527046F450056AC3B;
 			packageReferences = (
-				01939B94271C1C7400B8E2EF /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 01D8051F27046F450056AC3B /* Products */;
 			projectDirPath = "";
@@ -609,25 +605,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		01939B94271C1C7400B8E2EF /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		01939B95271C1C7400B8E2EF /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 01939B94271C1C7400B8E2EF /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 01D8051627046F450056AC3B /* Project object */;
 }
